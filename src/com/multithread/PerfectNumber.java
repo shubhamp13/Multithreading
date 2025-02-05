@@ -1,5 +1,7 @@
 package com.multithread;
 
+import java.io.IOException;
+
 public class PerfectNumber implements Runnable {
 
     private  int  range;
@@ -7,8 +9,7 @@ public class PerfectNumber implements Runnable {
         this.range = range;
     }
     @Override
-    public void run()
-    {
+    public void run() {
         for(int i=1;i<=range;i++)
         {
             int sum=0;
