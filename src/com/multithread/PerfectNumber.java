@@ -5,7 +5,8 @@ import java.io.IOException;
 public class PerfectNumber implements Runnable {
 
     private  int  range;
-    public PerfectNumber(int range) {
+    public PerfectNumber(int range)
+    {
         this.range = range;
     }
     @Override
