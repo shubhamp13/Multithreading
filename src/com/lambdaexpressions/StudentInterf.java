@@ -1,4 +1,6 @@
 package com.lambdaexpressions;
 
-public interface StudentInterf {
+public interface StudentInterf
+{
+    public String name(String name);
 }

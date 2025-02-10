@@ -26,9 +26,13 @@ public class BankAccount
                         System.out.println(e);
                         Thread.currentThread().interrupt();
                     }
+                    finally {
+                        lock.unlock();
+                    }
                     balance=balance-amount;
                     System.out.println(Thread.currentThread().getName()+" Transaction Successful!!!");
                     System.out.println(Thread.currentThread().getName()+" Balance: "+balance);
+
                 }
                 else
                 {
