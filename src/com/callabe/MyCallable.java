@@ -5,7 +5,8 @@ import java.util.concurrent.*;
 
 public class MyCallable implements Callable<ArrayList<Integer>>
 {
-    private int start,end;
+    private final int start;
+    private final int end;
     public MyCallable(int start, int end)
     {
         this.start = start;

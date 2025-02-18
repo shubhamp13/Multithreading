@@ -41,7 +41,7 @@ class SharedResource
 
 class  Producer implements Runnable
 {
-    private SharedResource sharedResource;
+    private final SharedResource sharedResource;
 
     public Producer(SharedResource sharedResource) {
         this.sharedResource = sharedResource;
@@ -57,7 +57,7 @@ class  Producer implements Runnable
 }
 class Consumer implements Runnable
 {
-    private SharedResource sharedResource;
+    private final SharedResource sharedResource;
     public Consumer(SharedResource sharedResource) {
         this.sharedResource = sharedResource;
     }
