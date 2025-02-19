@@ -1,7 +1,7 @@
 package com.synchronize;
 
 public class MyThread extends Thread{
-    private Counter counter;
+    private final Counter counter;
     public MyThread(Counter counter) {
         this.counter = counter;
     }

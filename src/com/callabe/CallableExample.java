@@ -28,5 +28,6 @@ public class CallableExample
         {
             Thread.currentThread().interrupt();
         }
+
     }
 }
